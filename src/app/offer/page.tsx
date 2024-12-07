@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+
 export default  async function Offer (){
   await new Promise((resolve) => {
     setTimeout(resolve, 3000)
