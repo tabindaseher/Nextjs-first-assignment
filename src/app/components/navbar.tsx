@@ -5,21 +5,22 @@ import Link from "next/link"
 export default function Navbar (){
     return(
     
-      <div className="flex bg-blue-700 rounded list-none justify-between p-3 text-black">
+      <div className="flex flex-wrap items-center bg-blue-700 rounded list-none justify-between p-3 text-white">
     
-        <h2 className="font-bold font-serif"> TS School</h2>
-        <br/>
+        <h2 className="font-bold font-serif text-lg sm:text-xl lg:text-2xl"> TS School</h2>
+        <nav className="flex flex-wrap gap-4">
         <Link className="mx-2 hover:text-gray-400" href="/">Home</Link>
-        <br/>
+       
         <Link className="mx-2 hover:text-gray-400" href="/contact">Contact</Link>
-        <br/>
+    
         <Link className="mx-2 hover:text-gray-400" href="/about">About</Link>
-        <br/>
+  
         <Link className="mx-2 hover:text-gray-400" href="/service">Service</Link>
-        <br/>
+ 
         <Link className="mx-2 hover:text-gray-400" href="/program">program</Link>
-        <br/>
+
         <Link className="mx-2 hover:text-gray-400" href="/offer">Offer</Link>
+        </nav>
       </div>
     )
   }
